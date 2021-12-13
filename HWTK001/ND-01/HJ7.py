@@ -21,14 +21,14 @@ HJ7: 取近似值
 
 
 # 方法一:
-def get_approximate_value(num):
+def tj_func(num):
     return int(float(num) + 0.5)
 
 
 import sys
 
 for line in sys.stdin:
-    print(get_approximate_value(line))
+    print(tj_func(line))
 
 
 # src_num = float(input())
@@ -36,7 +36,7 @@ for line in sys.stdin:
 # print(f(src_num))
 
 # 方法二：
-def get_approximate_value(num):
+def tj_func(num):
     inte, flo = str(num).split(".")
     inte = int(inte)
     if int(flo[0]) >= 5:
@@ -48,4 +48,4 @@ def get_approximate_value(num):
 import sys
 
 for line in sys.stdin:
-    print(get_approximate_value(line))
+    print(tj_func(line))
